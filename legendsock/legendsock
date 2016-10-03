@@ -1,0 +1,55 @@
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+
+# 检查是否已安装
+if [ ! -d "/usr/local/legendsock" ]; then
+  echo "LegendSock is not installed, please check it";
+  exit 1;
+fi
+
+# 检查是否 CentOS
+if [ "`cat /etc/redhat-release 2>/dev/null| cut -d\  -f1`" != "CentOS" ]; then
+  echo "Error: The current system is not CentOS";
+  exit 1;
+fi
+
+legendsock_start()
+{
+  clear
+  echo "Starting LegendSock server...";
+  /usr/local/legendsock/start.sh;
+  clear
+  echo "LegendSock start completed.";
+}
+legendsock_stop()
+{
+clear
+  echo "Stopping LegendSock server...";
+  /usr/local/legendsock/stop.sh;
+  clear
+  echo "LegendSock stop completed.";
+}
+legendsock_status()
+{
+  /usr/local/legendsock/status.sh;
+}
+
+case "${1}" in
+    start)
+        legendsock_start
+        ;;
+    stop)
+        legendsock_stop
+        ;;
+    restart)
+        legendsock_stop
+        legendsock_start
+        ;;
+    status)
+        legendsock_status
+        ;;
+    *)
+        echo "Usage: lnmp {start|stop|restart|status}";
+esac
+exit

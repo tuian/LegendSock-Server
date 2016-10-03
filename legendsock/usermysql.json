@@ -1,0 +1,13 @@
+{
+    "host": "_HOSTNAME_",
+    "port": _PORT_,
+    "user": "_USERNAME_",
+    "password": "_PASSWORD_",
+    "db": "_DATABASE_",
+    "node_id": 0,
+    "transfer_mul": 1.0,
+    "ssl_enable": 0,
+    "ssl_ca": "",
+    "ssl_cert": "",
+    "ssl_key": ""
+}
