@@ -1,14 +1,16 @@
 ## 传奇梭客(服务端)
-当前项目可未客户自动安装基于 ShadowsocksR 所修改的 LegendSock 服务端。
-
-相应的后端安装成功后需要配合 LegendSock 才可实现自定义加密方式、混淆插件、协议插件等功能。
+可以为你自动安装基于 ShadowsocksR 所修改的 LegendSock 服务端。
 
 原版 ShadowsocksR 请查阅: https://github.com/breakwa11/shadowsocks/tree/manyuser
 
 相应的 Shell Script 内容使用 lnmp.org 一键包进行改写，在此感谢两位作者的无私奉献。
 
 ## 注意事项
-当前脚本**仅支持 CentOS 6.x 系统**，若需要其他环境、请从当前 Github 下载后手动安装。
+当前脚本*仅支持 CentOS 6.x 系统*，为确保脚本可正常运作、请勿在除 CentOS 6.x 以外的系统中使用。
+
+若需要在其他环境安装、请从当前 Github 下载 `legendsock` 文件夹后，以 ShadowsocksR 相同的安装方式手动安装。
+
+相应的后端安装成功后需要配合 LegendSock 才可实现自定义加密方式、混淆插件、协议插件等功能。
 
 ## 安装方法
 在 Terminal 中执行如下命令:
