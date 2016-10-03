@@ -1,14 +1,14 @@
-# 传奇梭客
-自动安装基于 ShadowsocksR 所修改的 LegendSock 服务端。
+## 传奇梭客(服务端)
+当前项目可未客户自动安装基于 ShadowsocksR 所修改的 LegendSock 服务端。
 
-配合 LegendSock 可实现自定义加密方式、混淆插件、协议插件等功能。
+相应的后端安装成功后需要配合 LegendSock 才可实现自定义加密方式、混淆插件、协议插件等功能。
 
 原版 ShadowsocksR 请查阅: https://github.com/breakwa11/shadowsocks/tree/manyuser
 
-相应的 Shell Script 内容使用 lnmp.org 改写，在此感谢两位作者的无私奉献。
+相应的 Shell Script 内容使用 lnmp.org 一键包进行改写，在此感谢两位作者的无私奉献。
 
 ## 注意事项
-当前脚本`仅支持 CentOS 6.x 系统`，若需要其他环境、请从当前 Github 下载后手动安装。
+当前脚本**仅支持 CentOS 6.x 系统**，若需要其他环境、请从当前 Github 下载后手动安装。
 
 ## 安装方法
 在 Terminal 中执行如下命令:
@@ -37,6 +37,9 @@ legendsock restart   # 重启
 legendsock status    # 状态
 ```
 若使用相应的命令出现报错，请检查是否已成功安装 LegendSock 服务端。
+
+## 关于软件
+传奇梭客(LegendSock)是一款基于 WHMCS 所开发的扩展模块，可实现在 WHMCS 财务系统中在线自动开通、管理与统计相应的用量信息。
 
 ## 软件网址
 官方网址: https://www.legendsock.com, 合作站点: https://neworld.org
